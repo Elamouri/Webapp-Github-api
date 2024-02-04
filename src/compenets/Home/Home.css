@@ -1,0 +1,111 @@
+body {
+  background-color: #ffffff; /* Set the desired background color for the entire page */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.user-search-container {
+  /*need check if used */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff; /* Set background color for the search container */
+  color: #0a0000; /* Text color for the entire container */
+  padding: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Set position to relative */
+  z-index: 2; /* Set a higher z-index */
+}
+
+.search-bar {
+  /*need to check if used */
+  width: 0%; /* Full width */
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none; /* Remove the border */
+  border-radius: 0; /* Remove border radius */
+  position: absolute;
+  top: 0; /* Stick to the top */
+  left: 0; /* Stretch from the left */
+  right: 0; /* Stretch to the right */
+  z-index: 1; /* Set a lower z-index */
+}
+
+.search-input-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%; /* Adjust as needed */
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-input:focus {
+  outline: none; /* Remove the default focus outline */
+  border: none; /* Remove the border on focus */
+  box-shadow: none; /* Remove any box shadow on focus */
+}
+
+.search-results-container {
+  padding: 20px; /* Adjust padding as needed */
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Set position to relative */
+  z-index: 0; /* Set a lower z-index */
+}
+
+.user-card {
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  background-color: #ffffff;
+
+  padding: 10px;
+  border: 0px solid #181717;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card img {
+  width: 50px; /* Adjust image width as needed */
+  height: 50px; /* Adjust image height as needed */
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px; /* Add spacing between image and text */
+}
+
+.user-card p {
+  font-weight: bold;
+  text-align: center;
+  margin: 0; /* Remove default margin */
+}
+
+.with-line {
+  border-bottom: 1px solid #555353; /* Line between each user */
+}
+
+.no-results {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.search-icon {
+  color: #000;
+}
+
+.icon_fov {
+  margin-left: auto;
+}
+
+.cards {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
